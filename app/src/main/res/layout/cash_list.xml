@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:fitsSystemWindows="true"
+                    android:requiresFadingEdge="horizontal"
+                    android:scaleType="fitXY" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txt_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="90dp"
+                android:lines="1"
+                android:text="voucher"
+                android:fontFamily="@font/arial_rounded"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/small"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_voucher"
+                android:layout_marginStart="90dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="amount"
+                android:fontFamily="@font/arial_rounded"
+                android:textColor="@color/green2"
+                android:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_amount"
+                android:layout_marginStart="90dp"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="details"
+                android:fontFamily="@font/arial_rounded"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/dimen_detail_title"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_details"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="date now"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:textColor="@color/green2"
+                android:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

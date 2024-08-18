@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorPrimary">#ff9e00</color>
+    <color name="colorPrimaryDark">#ff9e00</color>
+    <color name="colorAccent">#ff9e00</color>
+
+    <color name="green">#000000</color>
+    <color name="orange">#ff9e00</color>
+    <color name="toolbarcolor">#ff9e00</color>
+    <color name="orderbg">#88898b</color>
+    <color name="colormark">#E76430</color>
+    <color name="res_green">#0dde00</color>
+    <color name="res_orange">#E76430</color>
+    <color name="light_grey">#C6CACD</color>
+    <color name="my_statusbar_color">#ff9e00</color>
+    <color name="txt_orange">#ff9e00</color>
+    <color name="txt_white">#FFFFFF</color>
+
+    <!--Main text color-->
+    <color name="darkGrey">#535252</color>
+    <color name="lightGrey">#747474</color>
+
+    <!--Levels Riders text color-->
+    <color name="oro">#ffbf00</color>
+    <color name="platino">#7f7679</color>
+    <color name="diamante">#6b0091</color>
+    <color name="boton">#6b0091</color>
+    <color name="pago_revision">#6b0091</color>
+    <color name="boton_datos">#00d9fc</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff3f2e</color>
+    <color name="green2">#2abb9b</color>
+    <color name="battery_full">#00DC25</color>
+    <color name="header">#ffc76d</color>
+</resources>

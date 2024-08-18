@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "787988176005",
+    "firebase_url": "https://faster-delivery-app-2020.firebaseio.com",
+    "project_id": "faster-delivery-app-2020",
+    "storage_bucket": "faster-delivery-app-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787988176005:android:3e204cd6071286aaaeddec",
+        "android_client_info": {
+          "package_name": "aliado.faster.com.ec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787988176005-66g12ot3gu8uvvrddk6gv1tvpvt5p1c9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aliado.faster.com.ec",
+            "certificate_hash": "c9800631fc4cf532694ad6c50f319c173d91f90b"
+          }
+        },
+        {
+          "client_id": "787988176005-o4rtf0lhdohhe5d423efu7d8gsbvkgej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aliado.faster.com.ec",
+            "certificate_hash": "52c00014f159f2420c8342d181c24cce155ae2d7"
+          }
+        },
+        {
+          "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSIA-Z2whp8d8DUIs4qSOmDyNTT9RrCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787988176005:android:50fed324c489cc50aeddec",
+        "android_client_info": {
+          "package_name": "faster.com.ec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787988176005-6gseee5j29nl65h46li6hcgv5g1igm2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "faster.com.ec",
+            "certificate_hash": "4656eef941b3dc198335c4a6769ddd4c18a15491"
+          }
+        },
+        {
+          "client_id": "787988176005-lahhqiqk8ccqohmqos342ea832q9en85.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "faster.com.ec",
+            "certificate_hash": "fcb82eaaffc982a8eaa063b291c6d59dfc56ea98"
+          }
+        },
+        {
+          "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSIA-Z2whp8d8DUIs4qSOmDyNTT9RrCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787988176005:android:798a7f296b216fd3aeddec",
+        "android_client_info": {
+          "package_name": "repartidor.faster.com.ec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787988176005-dnpdj8fsff7m6cg4qe72ammppo0pas6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "repartidor.faster.com.ec",
+            "certificate_hash": "994da8d7d83b04bf4dec091bc6530fdca92b1afa"
+          }
+        },
+        {
+          "client_id": "787988176005-u4shqq4mtbc3dgsd37sk9kk4l11rfp91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "repartidor.faster.com.ec",
+            "certificate_hash": "592622f3c9c3626c7bc5e5bdc7cef22f93db90f0"
+          }
+        },
+        {
+          "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSIA-Z2whp8d8DUIs4qSOmDyNTT9RrCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787988176005-5bmsbjhtkm9vgujis63mhlqemvnkeo48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

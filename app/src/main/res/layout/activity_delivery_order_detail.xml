@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10sp"
+            android:contentDescription="@string/no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/ib_back"
+            android:fontFamily="@font/kamerik"
+            android:text="Orden #"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/linear_whatsapp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_whatsapp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:contentDescription="text"
+                app:cardCornerRadius="30dp"
+                android:foreground="?selectableItemBackground"
+                android:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="cardViewClicked"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/whatsapp"
+                    android:scaleType="fitXY"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/origin_orders"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginStart="2dp"
+        android:layout_below="@id/rel_header">
+
+            <TextView
+                android:id="@+id/txt_orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/kamerik"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="status"
+                android:textColor="@color/boton"
+                android:textSize="14sp"
+                tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/origin_orders">
+
+        <repartidor.faster.com.ec.utils.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp" />
+
+        <TextView
+            android:id="@+id/txt_orderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/kamerik"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/rel_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/image"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:weightSum="0">
+
+            <!--android:paddingTop="1dp"-->
+            <TextView
+                android:id="@+id/txt_orderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/kamerik"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingTop="0dp"
+                android:lines="1"
+                android:text="orderAmount"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_deliveryPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/kamerik"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingTop="3dp"
+                android:lines="1"
+                android:text="deliveryPrice"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kamerik"
+                android:paddingTop="5dp"
+                android:lines="1"
+                android:text="nameClient"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_deliveryQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kamerik"
+                android:lines="1"
+                android:text="deliveryQuantity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_detail_p"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:fontFamily="@font/kamerik"
+                android:maxLines="3"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="address"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/dimen_detail_p"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rel_img"
+        android:background="#2536ff" />
+
+    <RelativeLayout
+        android:id="@+id/rel_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginEnd="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_pay"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="2dp" />
+
+            <LinearLayout
+                android:id="@+id/rel_middle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/image_pay"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:weightSum="0">
+
+                <TextView
+                    android:id="@+id/txt_modePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="factura | pago"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_third4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_third"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="3sp">
+
+        <RelativeLayout
+            android:id="@+id/rel_middle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_origin_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kamerik"
+                android:paddingBottom="5dp"
+                android:maxLines="2"
+                android:paddingEnd="0dp"
+                android:text="procede"
+                android:textColor="@color/diamante"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_origin_orders"
+                android:fontFamily="@font/kamerik"
+                android:maxLines="15"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="Notas"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="SpUsage" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rel_fourth"
+        layout="@layout/custom_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_third4"
+        android:layout_marginTop="8dp" />
+
+    <include
+        android:id="@+id/rel_fourth2"
+        layout="@layout/button_call_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_third4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <include
+        android:id="@+id/rel_fourth3"
+        layout="@layout/button_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_third4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <ListView
+        android:id="@+id/list_order2"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_below="@+id/rel_fourth"
+        android:layout_marginTop="65dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_note_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_fourth"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F0EFEF" />
+
+            <TextView
+                android:id="@+id/btn_restaurant_order"
+                android:padding="5dp"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/large"
+                android:text="PEDIDO DE TIENDA"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:maxLines="20"
+                android:lines="6"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <!-- android:background="@drawable/custom_shape" -->
+
+        <Button
+            android:id="@+id/btn_picked"
+            style="@style/Delivery_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large"
+            android:fontFamily="@font/kamerik"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/api_Loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/toolbarcolor"
+        android:indeterminateTint="@color/toolbarcolor"
+        android:visibility="visible" />
+
+</RelativeLayout>

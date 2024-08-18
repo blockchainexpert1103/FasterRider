@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:transitionName="@string/app_name"
+    android:id="@+id/delivery_order_card" >
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#00000000">
+
+        <repartidor.faster.com.ec.utils.RoundedImageView
+            android:id="@+id/img_status"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:id="@+id/rel_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/img_status"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/kamerik"
+                    android:gravity="center_vertical"
+                    android:text="#CAJA"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="14sp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/txt_orderTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_opening_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="valor_inicial"
+                android:textColor="@color/darkGrey"
+                android:textSize="12dp"
+                android:fontFamily="@font/kamerik"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_closing_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="closing_amount"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="@font/kamerik"
+                android:textSize="12dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_total_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLength="80"
+                android:maxLines="1"
+                android:text="total_income"
+                android:textColor="@color/green2"
+                android:fontFamily="@font/kamerik"
+                android:textSize="12dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_total_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLength="80"
+                android:maxLines="1"
+                android:text="total_expense"
+                android:textColor="@color/red"
+                android:fontFamily="@font/kamerik"
+                android:textSize="12dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_total_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLength="80"
+                android:maxLines="1"
+                android:text="total_cash"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kamerik"
+                android:textSize="13sp"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

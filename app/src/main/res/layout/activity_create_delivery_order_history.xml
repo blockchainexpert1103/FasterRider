@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".motorizado.DeliveryOrderHistory"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarheight"
+        android:background="@color/toolbarcolor">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="@color/white"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/ib_back"
+            android:fontFamily="@font/kamerik"
+            android:text="Historial de entregas"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/large"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="total delivery"
+        android:textColor="@color/diamante"
+        android:visibility="invisible"
+        android:fontFamily="@font/arial_rounded"
+        android:lines="2"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="50dp"
+        tools:ignore="SpUsage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_order_history_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/celldelivery"
+        android:layout_below="@+id/rel_title"
+        android:layout_marginTop="35dp"/>
+
+    <ProgressBar
+        android:id="@+id/ItemLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/toolbarcolor"
+        android:indeterminateTint="@color/toolbarcolor"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/api_Loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/toolbarcolor"
+        android:indeterminateTint="@color/toolbarcolor"
+        android:visibility="visible" />
+
+</RelativeLayout>
